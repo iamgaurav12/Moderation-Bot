@@ -1,3 +1,4 @@
+import os
 import gradio as gr
 from transformers import pipeline
 import re
@@ -87,4 +88,7 @@ with gr.Blocks() as demo:
     
     moderate_btn.click(moderate_message, inputs=[msg_input, guidelines_input], outputs=[msg_output])
 
-demo.launch(share=True)
+# Run App with PORT Binding for Render
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5050)) 
+    demo.launch(server_name="0.0.0.0", server_port=port)
