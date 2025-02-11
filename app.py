@@ -89,6 +89,10 @@ with gr.Blocks() as demo:
     moderate_btn.click(moderate_message, inputs=[msg_input, guidelines_input], outputs=[msg_output])
 
 # Run App with PORT Binding for Render
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5050)) 
+port = int(os.environ.get("PORT", 5050))
+
+def run():
     demo.launch(server_name="0.0.0.0", server_port=port)
+
+if __name__ == "__main__":
+    run()
