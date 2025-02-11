@@ -1,13 +1,13 @@
 # Sentinel Bot
 
-This project is an AI-powered moderation system that uses NLP models to analyze and moderate messages based on predefined guidelines.
+This project is an AI-powered Sentinel system that uses NLP models to analyze and moderate messages based on predefined guidelines.
 
 ## Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/Moderation_bot.git
-    cd Moderation_bot
+    git clone https://github.com/yourusername/Sentinel_bot.git
+    cd Sentinel_bot
     ```
 
 2. Install the required packages:
@@ -26,9 +26,9 @@ This project is an AI-powered moderation system that uses NLP models to analyze 
 
 3. Enter the message you want to moderate and click "Check Message".
 
-## Moderation Guidelines
+## Sentinel Guidelines
 
-The moderation guidelines can be updated by admins through the Gradio interface. The default guidelines include:
+The Sentinel guidelines can be updated by admins through the Gradio interface. The default guidelines include:
 - Allow positive messages.
 - Block cuss words.
 - Allow negative comments about individuals but block negative comments against a community.
