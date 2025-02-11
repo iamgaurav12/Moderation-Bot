@@ -1,4 +1,4 @@
-# Moderation Bot
+# Sentinel Bot
 
 This project is an AI-powered moderation system that uses NLP models to analyze and moderate messages based on predefined guidelines.
 
